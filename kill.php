@@ -38,7 +38,7 @@ $response = curl_exec($ch);
 $resultStatus = curl_getinfo($ch);
 
 
-//If the php curl was successful, display the results, if nott, print failed results
+//If the php curl was successful, display the results, if nott print failed results
 if($resultStatus['http_code'] == 200) {
     echo "<h2>Job $id was deleted</h2>";
 } else {
