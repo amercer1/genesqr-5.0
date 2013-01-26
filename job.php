@@ -47,7 +47,6 @@ foreach($_POST as $name => $value) {
   }
 }
 
-//echo $postField;
 
 //Sets the postField as an option for our php curl request
 curl_setopt($ch, CURLOPT_POSTFIELDS, $postField);
