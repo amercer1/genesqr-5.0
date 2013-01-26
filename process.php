@@ -56,6 +56,13 @@ if($resultStatus['http_code'] == 200) {
       <input type="text" name="outPutFile" id="outPutFile" placeholder="Output Location" required>
     </div>
   </div>
+
+  <div class="control-group">
+    <label class="control-label" name="outputPath" for="outputPath">Output Path</label>
+    <div class="controls">
+      <input type="text" name="outputPath" id="outputPath" placeholder="Output Path" required>
+    </div>
+  </div>
   
   <div class="control-group">
      <label class="control-label" name="Species" for="Species">Species</label>
