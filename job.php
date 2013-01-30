@@ -36,7 +36,7 @@ curl_setopt($ch, CURLOPT_POST, true);
 $postField ="softwareName=GeneSeqer-5.0&archive=true";
 
 //HARD CODE CALLBACK URL HERE. MAKE SURE TO CHANGE THIS TO THE IP ADDRESS OF THAT HIS SCRIPT IS INSTALLED
-$postField="$postField&callbackUrl=http://128.196.142.30/genesqr-5.0/done.php";
+$postField="$postField&callbackUrl=URLHERE/genesqr-5.0/done.php";
 
 //Going through all the input form from process.php that user entered. Then adds it to the baseField.
 
