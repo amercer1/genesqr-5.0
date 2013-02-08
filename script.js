@@ -1,14 +1,9 @@
 function loadFiles(){
 
-    var data= JSON.parse(getSession());
- 
-    var username= data.login;
-    var token= data.password;
-
     var fileData = JSON.parse(getFiles());
     addValuesToSelectors(fileData);
 }
-
+/*
 function getSession(){
 
    var xhr = new XMLHttpRequest();
@@ -20,7 +15,7 @@ function getSession(){
 
 
 }
-
+*/
 function getFiles(){
 
    var xhr = new XMLHttpRequest();
