@@ -5,7 +5,7 @@
         <link href="css/bootstrap/css/bootstrap.css" rel="stylesheet">
         <link href="css/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
 </head>
-<body>
+<body onload="loadFiles();">
 <?php
 
 // pull $_POST values and place them in variables 
@@ -87,7 +87,9 @@ if($resultStatus['http_code'] == 200) {
   <div class="control-group">
       <label class="control-label" name="libfname" for="libfname">libfname</label>
       <div class="controls">
-           <input type="text" name="libfname" id="libfname" placeholder="libfname">
+           <select name="libfname" id="libfname" placeholder="libfname">
+                 
+	   </select>
        </div>
   </div>
       
@@ -101,7 +103,8 @@ if($resultStatus['http_code'] == 200) {
    <div class="control-group">
 	<label class="control-label" name="estSeq" for="estSeq">estSeq</label>
         <div class="controls">
-	    <input type="text" name="estSeq" id="estSeq" placeholder="estSeq" required>
+	    <select name="estSeq" id="estSeq" placeholder="estSeq" required>
+	    </select>
         </div>
    </div> 
 
@@ -200,5 +203,6 @@ curl_close ($ch);
 
 ?>
 
+   <script type="text/javascript" src="script.js"></script>
 </body>
 <html>
