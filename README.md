@@ -10,4 +10,4 @@ Setup
 To help setup some user specific details, use the ruby install script. It takes the url on which the box will be hosted, and the email address for when the application can submit to upon a job completion
 
 For example:
-'''ruby install.rb http://128.196.142.30 mail@example.com'''
+```ruby install.rb http://128.196.142.30 mail@example.com```
