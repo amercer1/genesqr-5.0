@@ -38,15 +38,21 @@ function addValuesToSelectors(fileData){
    var secondSelector = document.getElementById("estSeq");
    
    for(i in fileData){
-      var option=document.createElement("option");
-      option.text=(fileData[i].path);
-      selector.add(option,selector.options[null]);
+      if(fileData[i].type =="file"){
+      	var option=document.createElement("option");
+      	option.text=(fileData[i].path);
+      	selector.add(option,selector.options[null]);
+      }
+
    }
 
    for(i in fileData){
-      var option=document.createElement("option");
-      option.text=(fileData[i].path);
-      secondSelector.add(option,secondSelector.options[null]);
+
+      if(fileData[i].type == "file"){
+      	var option=document.createElement("option");
+     	option.text=(fileData[i].path);
+      	secondSelector.add(option,secondSelector.options[null]);
+      }
    }
 
 }
